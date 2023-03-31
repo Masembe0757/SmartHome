@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ThirdFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFC107"
+        android:layout_height="70dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sort"
+            android:scaleX="0.3"
+            app:tint="@color/white"
+            android:scaleY="0.3"
+            android:layout_marginLeft="290dp"
+
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="280dp"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:src="@drawable/backup"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="No Routines"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="400dp"
+        android:textColor="#423F3F"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Click '+' button below to get started"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="440dp"
+        android:textColor="#676262"
+        />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/add"
+        app:iconTint="@color/white"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="50dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="580dp"
+
+        />
+
+</FrameLayout>

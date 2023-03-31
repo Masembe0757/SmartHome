@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FirstFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFC107"
+        android:layout_height="70dp">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:textColor="@color/white"
+
+           android:textSize="35dp"
+           android:text="My Smart Home"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/edit"
+            android:scaleX="0.5"
+            app:tint="@color/white"
+            android:scaleY="0.5"
+           android:layout_marginLeft="320dp"
+
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/star2"
+        app:tint="#433F3F"
+        android:layout_marginTop="210dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="310dp"
+        android:gravity="center"
+        android:textColor="#595454"
+        android:textSize="30dp"
+        android:text="No Favorites "
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#857D7D"
+        android:layout_marginTop="340dp"
+        android:text="Add your Favorite routines for  \n access here \n \n Tap '+' button below to add your \n favorite routines "
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/add"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="50dp"
+        android:layout_marginLeft="280dp"
+        app:iconTint="@color/white"
+        android:layout_marginTop="580dp"
+
+        />
+
+</FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_height="660dp"
+        android:background="#EFEDED"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFC107"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:text="My Smart Home"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:textColor="#4A4848"
+        android:textSize="25dp"
+        android:text="More Recommendations"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="135dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:textColor="#575252"
+        android:textSize="20dp"
+        android:text="Even more recommendations"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="180dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/umb"
+        android:scaleX="0.9"
+        />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/white"
+            android:text="Thanksgiving Dinner \n Ready"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/white"
+            android:text="Send me a notification"
+            android:textSize="20dp"
+            android:layout_marginTop="90dp"/>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

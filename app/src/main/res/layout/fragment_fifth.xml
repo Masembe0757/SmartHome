@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FifthFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFC107"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:text="My Smart Home"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:background="#EFEDED"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="User settings"
+            android:textSize="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:gravity="start"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            app:tint="#FFC107"
+            android:layout_marginTop="29dp"
+            android:src="@drawable/circle_person" />
+        <TextView
+            android:layout_width="100dp"
+            android:text="Moses"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="30dp"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:text="kmntanda@gmail.com"
+            android:layout_marginLeft="70dp"
+            android:textColor="#877C7C"
+            android:textSize="17dp"
+            android:layout_marginTop="45dp"
+            android:layout_height="30dp"
+            />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:background="#EFEDED"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Home settings"
+            android:textSize="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:gravity="start"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/person"
+            app:tint="#FFC107"
+            android:scaleX="0.5"
+            android:layout_marginLeft="10dp"
+            android:scaleY="0.5"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:text="Accounts &amp; Hubs"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C1C0C0"
+        android:layout_marginTop="310dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="310dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/clients"
+            app:tint="#FFC107"
+            android:scaleX="0.5"
+            android:layout_marginLeft="10dp"
+            android:scaleY="0.5"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:text="Clients"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C1C0C0"
+        android:layout_marginTop="370dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="370dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/location"
+            app:tint="#FFC107"
+            android:scaleX="0.5"
+            android:layout_marginLeft="10dp"
+            android:scaleY="0.5"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:text="Locations"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_marginTop="430dp"
+        android:background="#EFEDED"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Voice"
+            android:textSize="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:gravity="start"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="480dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/voice"
+            app:tint="#FFC107"
+            android:scaleX="0.5"
+            android:layout_marginLeft="10dp"
+            android:scaleY="0.5"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:text="Voice Assistants"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_marginTop="540dp"
+        android:background="#EFEDED"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="App Permissions"
+            android:textSize="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:gravity="start"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="590dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/settings"
+            app:tint="#51504A"
+            android:scaleX="0.5"
+            android:layout_marginLeft="10dp"
+            android:scaleY="0.5"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:text="Notifications &amp; permissions"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            />
+    </RelativeLayout>
+
+
+
+</FrameLayout>
