@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/manager"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SelectFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFC107"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="Select a routine"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_back_24"
+            android:scaleX="0.4"
+            android:id="@+id/back"
+            app:tint="@color/white"
+            android:scaleY="0.4"
+            android:layout_marginLeft="5dp"
+
+            />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/CreatGo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="50dp"
+        app:icon="@drawable/add"
+        app:iconSize="50dp"
+        app:iconTint="@color/white"
+
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="Create a new Routine"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+
+
+</FrameLayout>

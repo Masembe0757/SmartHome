@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/second"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SecondFragment">
 
@@ -73,8 +74,8 @@
         />
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#B5B3B3"
+        android:layout_height="1dp"
+        android:background="#E6E4E4"
         android:layout_marginTop="280dp"
         />
 

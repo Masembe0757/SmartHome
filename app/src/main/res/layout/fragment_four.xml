@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/four"
     tools:context=".FourFragment">
     <FrameLayout
         android:layout_width="match_parent"
@@ -49,7 +50,8 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:src="@drawable/umb"
-        android:scaleX="0.9"
+        android:scaleX="0.95"
+
         />
         <TextView
             android:layout_width="300dp"

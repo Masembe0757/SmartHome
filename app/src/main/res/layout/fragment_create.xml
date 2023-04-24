@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E3E0E0"
+    tools:context=".CreateFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFC107"
+        android:id="@+id/man"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="Select a routine"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/close"
+            android:scaleX="0.3"
+            android:id="@+id/cancel"
+            app:tint="@color/white"
+            android:scaleY="0.3"
+            android:layout_marginLeft="5dp"
+
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/check"
+            android:scaleX="0.3"
+            android:id="@+id/check1"
+            app:tint="@color/white"
+            android:scaleY="0.3"
+            android:layout_marginLeft="310dp"
+
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/routine_nameHidden"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="75dp"
+        android:visibility="gone"
+        android:text="Routine Name"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        />
+    <EditText
+        android:id="@+id/routine_name"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="97dp"
+        android:hint="Routine name"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="150dp"
+        android:text="When"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/time_Place"
+        android:layout_marginTop="200dp"
+        android:text="Want this routine to run autimatically?\n Add an event below"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#D1CDCD"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="270dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Add Event"
+            android:layout_marginLeft="150dp"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="20dp"
+            android:id="@+id/to_Add_Event"
+            android:layout_height="20dp"
+            app:icon="@drawable/add"
+            app:backgroundTint="#2196F3"
+            app:cornerRadius="50dp"
+            android:layout_marginLeft="280dp"
+            app:iconTint="@color/white"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="65dp"
+            android:text="Run these actions"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="380dp"
+        android:text="No actions. Tap below to add one"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#D1CDCD"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="450dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Add Action"
+            android:layout_marginLeft="150dp"
+            android:textSize="25dp"
+            android:layout_marginTop="23dp"
+            />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="20dp"
+            android:id="@+id/to_Add_Action"
+            android:layout_height="20dp"
+            app:icon="@drawable/add"
+            app:backgroundTint="#2196F3"
+            app:cornerRadius="50dp"
+            android:layout_marginLeft="280dp"
+            app:iconTint="@color/white"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="65dp"
+            android:text="But only if"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="560dp"
+        android:text="No actions. Tap below to add one"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#D1CDCD"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="640dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Add Coondition"
+            android:layout_marginLeft="110dp"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="20dp"
+            android:id="@+id/to_Add_Condition"
+            android:layout_height="20dp"
+            app:icon="@drawable/add"
+            app:backgroundTint="#2196F3"
+            app:cornerRadius="50dp"
+            android:layout_marginLeft="280dp"
+            app:iconTint="@color/white"
+            android:layout_marginTop="10dp"
+
+            />
+
+            />
+
+    </RelativeLayout>
+</FrameLayout>

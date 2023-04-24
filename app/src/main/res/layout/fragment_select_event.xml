@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".selectEventFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFC107"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:text="Select an Event"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_back_24"
+            android:scaleX="0.4"
+            android:id="@+id/back_to_create"
+            app:tint="@color/white"
+            android:scaleY="0.4"
+            android:layout_marginLeft="5dp"
+
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/select_time"
+        android:text="The time is Time"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="15dp"
+
+        />
+    <View
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="20dp"
+        android:background="#E6E4E4"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="140dp"
+        android:text="It's sunset at Location"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="15dp"
+        />
+    <View
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="20dp"
+        android:background="#E6E4E4"
+        />
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="210dp"
+        android:text="It's sunrise at Location "
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="15dp"
+        />
+    <View
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="20dp"
+        android:background="#E6E4E4"
+        />
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="280dp"
+        android:text="It's 15 minutes before sunrise \n at location "
+        android:paddingTop="15dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        />
+    <View
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="20dp"
+        android:background="#E6E4E4"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="370dp"
+        android:text="It's 15 minutes after sunrise \n Location"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="15dp"
+        />
+    <View
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="20dp"
+        android:background="#E6E4E4"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="460dp"
+        android:text="It's 15 minutes before sunset \n at Location"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="15dp"
+        android:textSize="25dp"
+
+        />
+    <View
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="20dp"
+        android:background="#E6E4E4"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="15dp"
+        android:textSize="25dp"
+        android:text="It's 15 minutes after sunset at \n Location"
+
+        />
+
+
+
+</FrameLayout>

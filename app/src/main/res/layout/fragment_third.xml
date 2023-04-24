@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/third"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ThirdFragment">
 
@@ -10,6 +11,14 @@
         android:layout_width="match_parent"
         android:background="#FFC107"
         android:layout_height="70dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FFC107"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:text="My Smart Home"/>
 
 
         <ImageView
@@ -23,10 +32,22 @@
 
             />
     </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/ACTIVE_STATE"
+        android:visibility="gone"
+        android:background="#F1EBEB"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="Active"
+        android:textSize="25dp"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="140dp"
+        android:id="@+id/CIRCLE"
         android:layout_marginTop="280dp"
         android:scaleX="0.7"
         android:scaleY="0.7"
@@ -37,6 +58,7 @@
         android:layout_height="40dp"
         android:text="No Routines"
         android:textSize="25dp"
+        android:id="@+id/BELOW_CIRCLE1"
         android:gravity="center"
         android:layout_marginTop="400dp"
         android:textColor="#423F3F"
@@ -44,6 +66,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:id="@+id/BELOW_CIRCLE2"
         android:text="Click '+' button below to get started"
         android:textSize="20dp"
         android:gravity="center"
