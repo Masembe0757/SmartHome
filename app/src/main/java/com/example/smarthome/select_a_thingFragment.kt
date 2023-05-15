@@ -14,10 +14,18 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.FragmentPagerAdapter
 import androidx.navigation.fragment.findNavController
+import androidx.viewpager.widget.ViewPager
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import androidx.viewpager2.widget.ViewPager2
+import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.example.smarthome.databinding.FragmentThirdBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.tabs.TabLayout
 
 class select_a_thingFragment : Fragment() {
+    private  lateinit var adapter: FragmentPageAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,82 +36,42 @@ class select_a_thingFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val navBar : BottomNavigationView = requireActivity().findViewById(R.id.main_nav)
+        navBar.visibility = View.GONE;
         // Inflate the layout for this fragment
         val v = inflater.inflate(R.layout.fragment_select_a_thing, container, false)
         val arbck = v.findViewById<ImageView>(R.id.b2C)
-        val things = v.findViewById<TextView>(R.id.THINGS)
-        val scenes = v.findViewById<TextView>(R.id.SCENES)
-        val routines = v.findViewById<TextView>(R.id.ROUTINES)
-        val things_view = v.findViewById<View>(R.id.THINGS_VIEW)
-        val scenes_view = v.findViewById<View>(R.id.SCENES_VIEW)
-        val routines_view = v.findViewById<View>(R.id.ROUTINES_VIEW)
-        val noticon = v.findViewById<ImageView>(R.id.NOTI)
-        val hidtext = v.findViewById<TextView>(R.id.Hidden_Text)
-        val notitxt = v.findViewById<TextView>(R.id.NOTI_TEXT)
-        hidtext.setOnClickListener{
-            inputDialog()
-        }
-        noticon.setOnClickListener{
-            hidtext.visibility = View.VISIBLE
-            noticon.visibility = View.GONE
-            notitxt.visibility = View.GONE
+        val tablay_out = v.findViewById<TabLayout>(R.id.tab)
+        val viewpager = v.findViewById<ViewPager2>(R.id.widget)
+        adapter = FragmentPageAdapter(childFragmentManager,lifecycle)
+        viewpager.adapter = adapter
+         tablay_out.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
+             override fun onTabSelected(tab: TabLayout.Tab?) {
+                 if (tab != null) {
+                     viewpager.currentItem = tab.position
+                 }
+             }
 
-        }
-        things.setOnClickListener{
-            things_view.visibility = View.VISIBLE
-            scenes_view.visibility = View.GONE
-            routines_view.visibility = View.GONE
-            hidtext.visibility = View.GONE
-            noticon.visibility = View.VISIBLE
-            notitxt.visibility = View.VISIBLE
+             override fun onTabUnselected(tab: TabLayout.Tab?) {
 
+             }
 
-        }
-        scenes.setOnClickListener{
-            scenes_view.visibility = View.VISIBLE
-            things_view.visibility = View.GONE
-            routines_view.visibility = View.GONE
-            hidtext.visibility = View.GONE
-            noticon.visibility = View.GONE
-            notitxt.visibility = View.GONE
+             override fun onTabReselected(tab: TabLayout.Tab?) {
+
+             }
+         })
+        viewpager.registerOnPageChangeCallback(object : OnPageChangeCallback(){
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                tablay_out.selectTab(tablay_out.getTabAt(position))
+            }
+        })
 
 
-        }
-        routines.setOnClickListener{
-            routines_view.visibility = View.VISIBLE
-            things_view.visibility = View.GONE
-            scenes_view.visibility = View.GONE
-            hidtext.visibility = View.GONE
-            noticon.visibility = View.GONE
-            notitxt.visibility = View.GONE
-
-
-        }
         arbck.setOnClickListener{
            findNavController().navigate(R.id.action_select_a_thingFragment_to_createFragment)
     }
         return v
-
-    }
-
-
-    private fun inputDialog() {
-       val inputdia = AlertDialog.Builder(activity)
-        val customlayout : View = layoutInflater.inflate(R.layout.add_notification,null)
-        inputdia.setTitle("Enter a value")
-        inputdia.setView(customlayout)
-        inputdia.setPositiveButton("OK") { dialog: DialogInterface?, which: Int ->
-            val editText = customlayout.findViewById<EditText>(R.id.notification_input)
-            val input = editText.text.toString()
-            findNavController().navigate(R.id.action_select_a_thingFragment_to_thirdFragment)
-
-
-        }
-        inputdia.setNegativeButton("CANCEL") { dialog: DialogInterface?, which: Int ->
-
-        }
-        inputdia.show()
-
 
     }
 }

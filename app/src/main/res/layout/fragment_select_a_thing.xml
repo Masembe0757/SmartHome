@@ -40,87 +40,41 @@
             android:layout_marginLeft="310dp"/>
 
 
+
     </RelativeLayout>
-    <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="95dp"
-        android:id="@+id/NOTI"
-        android:layout_marginLeft="15dp"
-        android:src="@drawable/noti"
-        android:scaleY="0.5"
-        android:scaleX="0.6"
-        />
-    <TextView
-        android:layout_width="310dp"
-        android:id="@+id/Hidden_Text"
-        android:visibility="gone"
-        android:layout_height="30dp"
-        android:text="Enter your notification text here"
-        android:layout_marginTop="110dp"
-        android:layout_marginLeft="20dp"
-        android:textSize="20dp"
-        />
-    <TextView
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="165dp"
-        android:id="@+id/NOTI_TEXT"
-        android:text="Notification"
-        android:textSize="20dp"
-        android:layout_marginLeft="26dp"
-        />
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:id="@+id/THINGS"
-        android:layout_marginTop="75dp"
-        android:textSize="20dp"
-        android:text="THINGS"
-        android:layout_marginLeft="35dp"
-        />
-    <View
-        android:layout_width="120dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        android:id="@+id/THINGS_VIEW"
-        android:layout_marginTop="105dp"
-        />
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:id="@+id/SCENES"
-        android:layout_marginTop="75dp"
-        android:textSize="20dp"
-        android:text="SCENES"
-        android:layout_marginLeft="150dp"
-        />
-    <View
-        android:layout_width="120dp"
-        android:layout_height="1dp"
-        android:id="@+id/SCENES_VIEW"
-        android:visibility="gone"
-        android:background="@color/black"
-        android:layout_marginTop="105dp"
-        android:layout_marginLeft="120dp"
-        />
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:id="@+id/ROUTINES"
-        android:layout_marginTop="75dp"
-        android:textSize="20dp"
-        android:text="ROUTINES"
-        android:layout_marginLeft="260dp"
-        />
-    <View
-        android:layout_width="120dp"
-        android:layout_height="1dp"
-        android:id="@+id/ROUTINES_VIEW"
-        android:visibility="gone"
-        android:background="@color/black"
-        android:layout_marginTop="105dp"
-        android:layout_marginLeft="240dp"
-        />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THINGS" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCENES" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROUTINES" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/widget"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
 
 </FrameLayout>

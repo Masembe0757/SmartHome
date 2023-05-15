@@ -74,17 +74,46 @@
         android:textSize="25dp"
         android:layout_marginLeft="20dp"
         />
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:id="@+id/time_Place"
         android:layout_marginTop="200dp"
-        android:text="Want this routine to run autimatically?\n Add an event below"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:background="#D1CDCD"
+        android:background="#D1CDCD">
+        <ImageView
+            android:id="@+id/watch"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:layout_height="50dp"
+            android:src="@drawable/watch"
+            android:layout_marginTop="10dp"
+            android:scaleX="1.1"
+            android:layout_marginLeft="10dp"
+            android:scaleY="1.1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/time_Place"
+            android:text="Want this routine to run autimatically?\n Add an event below"
+            android:textSize="20dp"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/settime"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:src="@drawable/settings"
+            android:layout_marginTop="10dp"
+            android:scaleX="0.6"
+            android:layout_marginLeft="300dp"
+            android:scaleY="0.6"
+            app:tint="#434141"
+            />
+    </RelativeLayout>
 
-        />
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"

@@ -15,6 +15,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.smarthome.databinding.FragmentSelectEventBinding
 import com.example.smarthome.databinding.FragmentThirdBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
 
@@ -29,6 +30,7 @@ class selectEventFragment : Fragment() {
 
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -38,6 +40,11 @@ class selectEventFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val navBar : BottomNavigationView = requireActivity().findViewById(R.id.main_nav)
+        navBar.visibility = View.GONE;
+
+
+
 
         binding = FragmentSelectEventBinding.inflate(inflater,container,false)
         // Inflate the layout for this fragment
@@ -46,11 +53,9 @@ class selectEventFragment : Fragment() {
         val timetap = v.findViewById<TextView>(R.id.select_time)
 
 
-
-
-
         timetap.setOnClickListener{
             timePicker()
+
         }
 
         bck.setOnClickListener{
@@ -66,19 +71,12 @@ class selectEventFragment : Fragment() {
         val clockformat = if(is24Hours) TimeFormat.CLOCK_24H else TimeFormat.CLOCK_12H
         val Picker = MaterialTimePicker.Builder().setTimeFormat(clockformat).setHour(12).setMinute(0).build()
         Picker.show(childFragmentManager,"TAG")
-
             binding.apply {
-
                 Picker.addOnPositiveButtonClickListener{
                 val direction = selectEventFragmentDirections.actionSelectEventFragmentToCreateFragment("Date & Time \n The time is "+Picker.hour+":"+Picker.minute,args.rtname2)
                 findNavController().navigate(direction)
-
-
                 }
-
-
                 }
-
             }
 
 }
