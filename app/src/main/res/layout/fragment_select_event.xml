@@ -51,6 +51,7 @@
         android:background="#E6E4E4"
         />
     <TextView
+        android:id="@+id/location"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_marginTop="140dp"

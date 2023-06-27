@@ -43,15 +43,74 @@
         android:paddingTop="15dp"
         android:text="Active"
         android:textSize="25dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:id="@+id/rout_position"
+        android:layout_marginTop="130dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/rout_clock"
+            android:layout_marginTop="10dp"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:layout_marginLeft="5dp"
+
+
+            />
+        <TextView
+            android:id="@+id/rout_naME"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"
+            android:layout_height="80dp"
+            />
+        <TextView
+            android:id="@+id/RingingT"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="20dp"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"
+            android:layout_height="80dp"
+            />
+        <ImageView
+            android:id="@+id/editRoutine"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/edit"
+            android:layout_marginTop="10dp"
+            android:scaleX="0.5"
+            android:layout_marginLeft="305dp"
+            android:scaleY="0.5"
+            app:tint="#575454"
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="210dp"
+        android:background="#E6E4E4"
+        />
+
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:id="@+id/CIRCLE"
         android:layout_marginTop="280dp"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
+        android:scaleX="1"
+        android:scaleY="1"
         android:src="@drawable/backup"
+        app:tint="#323131"
         />
     <TextView
         android:layout_width="match_parent"

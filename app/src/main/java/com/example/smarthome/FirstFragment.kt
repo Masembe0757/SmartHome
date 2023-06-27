@@ -1,11 +1,13 @@
 package com.example.smarthome
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.fragment.findNavController
@@ -26,6 +28,14 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        val callback = object : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
+                requireActivity().finishAffinity()
+
+            }
+
+        }
 
         val navBar : BottomNavigationView = requireActivity().findViewById(R.id.main_nav)
         navBar.visibility = View.VISIBLE;

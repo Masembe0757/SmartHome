@@ -2,6 +2,8 @@ package com.example.smarthome
 
 import android.annotation.SuppressLint
 import android.app.TimePickerDialog
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.format.DateFormat.is24HourFormat
 import androidx.fragment.app.Fragment
@@ -53,8 +55,10 @@ class selectEventFragment : Fragment() {
         val timetap = v.findViewById<TextView>(R.id.select_time)
 
 
+
         timetap.setOnClickListener{
             timePicker()
+
 
         }
 
@@ -67,13 +71,22 @@ class selectEventFragment : Fragment() {
     }
     @SuppressLint("SetTextI18n")
     fun timePicker(){
+
         val is24Hours = is24HourFormat(requireContext())
         val clockformat = if(is24Hours) TimeFormat.CLOCK_24H else TimeFormat.CLOCK_12H
         val Picker = MaterialTimePicker.Builder().setTimeFormat(clockformat).setHour(12).setMinute(0).build()
         Picker.show(childFragmentManager,"TAG")
             binding.apply {
                 Picker.addOnPositiveButtonClickListener{
-                val direction = selectEventFragmentDirections.actionSelectEventFragmentToCreateFragment("Date & Time \n The time is "+Picker.hour+":"+Picker.minute,args.rtname2)
+
+
+                    val sp: SharedPreferences =
+                        requireActivity().getSharedPreferences("myroutines", Context.MODE_PRIVATE)
+                    val editor: SharedPreferences.Editor = sp.edit()
+                    editor.putInt("timemin", Picker.minute)
+                    editor.putInt("timeHour", Picker.hour)
+                    editor.apply()
+                val direction = selectEventFragmentDirections.actionSelectEventFragmentToCreateFragment(TimeHour = Picker.hour.toString(),Timemin=Picker.minute.toString(), rtname = args.rtname2)
                 findNavController().navigate(direction)
                 }
                 }

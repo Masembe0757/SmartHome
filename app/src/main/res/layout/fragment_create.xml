@@ -86,9 +86,9 @@
             android:layout_height="50dp"
             android:src="@drawable/watch"
             android:layout_marginTop="10dp"
-            android:scaleX="1.1"
+            android:scaleX="1.3"
             android:layout_marginLeft="10dp"
-            android:scaleY="1.1"
+            android:scaleY="1.3"
             />
         <TextView
             android:layout_width="match_parent"
@@ -97,6 +97,27 @@
             android:text="Want this routine to run autimatically?\n Add an event below"
             android:textSize="20dp"
             android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/time_Place2"
+            android:text="Date and Time"
+            android:textSize="20dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/time_Place3"
+            android:text=""
+            android:textSize="20dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="27dp"
+            android:visibility="gone"
             />
         <ImageView
             android:id="@+id/settime"
@@ -108,7 +129,7 @@
             android:scaleX="0.6"
             android:layout_marginLeft="300dp"
             android:scaleY="0.6"
-            app:tint="#434141"
+            app:tint="#534D4D"
             />
     </RelativeLayout>
 
@@ -149,16 +170,72 @@
             />
 
     </RelativeLayout>
-    <TextView
+
+
+
+
+
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="380dp"
-        android:text="No actions. Tap below to add one"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:background="#D1CDCD"
+        android:background="#D1CDCD">
+        <ImageView
+            android:id="@+id/noti"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:layout_height="50dp"
+            android:src="@drawable/noti"
+            android:layout_marginTop="11dp"
+            android:scaleX="1"
+            android:layout_marginLeft="10dp"
+            android:scaleY="1.1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/action_Place"
+            android:text="No actions. Tap below to add one."
+            android:textSize="20dp"
+            android:gravity="center"
 
-        />
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/notione"
+            android:text="Notification"
+            android:textSize="20dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/notitwo"
+            android:text=""
+            android:textSize="20dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="25dp"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/settime2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:src="@drawable/settings"
+            android:layout_marginTop="10dp"
+            android:scaleX="0.6"
+            android:layout_marginLeft="300dp"
+            android:scaleY="0.6"
+            app:tint="#534D4D"
+            />
+    </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"

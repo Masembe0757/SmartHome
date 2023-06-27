@@ -35,17 +35,64 @@
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/CreatGo"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="90dp"
         app:backgroundTint="#2196F3"
         app:cornerRadius="50dp"
         app:icon="@drawable/add"
-        app:iconSize="50dp"
+        app:iconSize="40dp"
         app:iconTint="@color/white"
 
+        tools:ignore="MissingClass" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="160dp"
+        android:background="#E6E4E4"
         />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:id="@+id/rout_position"
+        android:layout_marginTop="151dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/rout_clock"
+            android:layout_marginTop="10dp"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:layout_marginLeft="5dp"
+
+
+            />
+        <TextView
+            android:id="@+id/rout_naME"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"
+            android:layout_height="80dp"
+            />
+        <TextView
+            android:id="@+id/RingT"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="20dp"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"
+            android:layout_height="80dp"
+            />
+
+
+    </RelativeLayout>
 
     <TextView
         android:layout_width="300dp"

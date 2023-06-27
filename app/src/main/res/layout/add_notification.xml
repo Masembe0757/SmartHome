@@ -8,7 +8,8 @@
     <EditText
         android:layout_width="match_parent"
         android:id="@+id/notification_input"
-        android:hint="Welcome Home"
+        android:hint=""
+        android:text=""
         android:layout_height="wrap_content"/>
 
 </LinearLayout>

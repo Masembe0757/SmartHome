@@ -41,13 +41,25 @@
             android:id="@+id/action_createFragment_to_select_a_thingFragment"
             app:destination="@id/select_a_thingFragment" />
         <argument
-            android:name="timeA"
-            app:argType="string"
-            android:defaultValue="Want this routine to run automatically? \n Add an event below."/>
-        <argument
             android:name="rtname"
             app:argType="string"
             android:defaultValue="Routine name" />
+        <argument
+            android:name="Notification"
+            app:argType="string"
+            android:defaultValue="Iam the action message" />
+        <action
+            android:id="@+id/action_createFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <argument
+            android:name="Timemin"
+            app:argType="string"
+            android:defaultValue="minute" />
+        <argument
+            android:name="TimeHour"
+            app:argType="string"
+            android:defaultValue="hour"
+            />
     </fragment>
     <fragment
         android:id="@+id/selectEventFragment"
@@ -78,7 +90,15 @@
         android:id="@+id/thirdFragment"
         android:name="com.example.smarthome.ThirdFragment"
         android:label="fragment_third"
-        tools:layout="@layout/fragment_third" />
+        tools:layout="@layout/fragment_third" >
+
+        <action
+            android:id="@+id/action_thirdFragment_to_selectFragment"
+            app:destination="@id/selectFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_firstFragment2"
+            app:destination="@id/firstFragment" />
+    </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.smarthome.SecondFragment"
@@ -102,5 +122,8 @@
         <action
             android:id="@+id/action_tab_one2_to_thirdFragment"
             app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_tab_one2_to_createFragment"
+            app:destination="@id/createFragment" />
     </fragment>
 </navigation>

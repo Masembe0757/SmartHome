@@ -1,6 +1,7 @@
 package com.example.smarthome
 
 import android.app.AlertDialog
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.ActivityFragmentContainerView) as NavHostFragment
@@ -32,8 +34,6 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.main_nav)
         setupWithNavController(bottomNavigationView,navController)
-
-
 
     }
 

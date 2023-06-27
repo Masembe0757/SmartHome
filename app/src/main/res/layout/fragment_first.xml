@@ -38,6 +38,8 @@
         android:layout_height="100dp"
         android:src="@drawable/star2"
         app:tint="#433F3F"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
         android:layout_marginTop="210dp"
         />
     <TextView
